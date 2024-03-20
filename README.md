@@ -22,7 +22,7 @@ This is a responsive HTML and CSS template for a navigation bar with dropdown an
 Navigate to the project directory:
 ```bash
    cd your-repository
-                       ```
+```                      
    
 
 
