@@ -1,0 +1,61 @@
+
+<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Logo</a></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-image"> 
+              </div>
+              <div class="row">
+                <header>Design Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="#">Vectors</a></li>
+                  <li><a href="#">Business cards</a></li>
+                  <li><a href="#">Custom logo</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Email Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Personal Email</a></li>
+                  <li><a href="#">Business Email</a></li>
+                  <li><a href="#">Mobile Email</a></li>
+                  <li><a href="#">Web Marketing</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Security services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Site Seal</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="#">Privacy Seal</a></li>
+                  <li><a href="#">Website design</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li>      
+      </ul>
+    </div>
+  </nav>
