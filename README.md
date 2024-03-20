@@ -20,7 +20,7 @@ This is a responsive HTML and CSS template for a navigation bar with dropdown an
 
 
 Navigate to the project directory:
-    ```
+    ```bash
       cd your-repository
 
 The template design was inspired by :https://codepen.io/fadzrinmadu/pen/bGqrJjB
