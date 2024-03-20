@@ -1,4 +1,5 @@
-	:beginner:# web-templates
+:beginner:
+# web-templates
 # Responsive Dropdown and Mega Menu
 
 This is a responsive HTML and CSS template for a navigation bar with dropdown and mega menu functionalities. It includes features such as a logo, navigation links, dropdown menus, and a mega menu.
