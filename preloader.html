@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Example</title>
+    <style>
+        .loader-container {
+            background: #fff;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .loader {
+            display: block;
+            position: absolute;
+            font-size: 0;
+            color: #f36b21;
+            left: 50%;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+
+<div id="pre-loader" class="loader-container">
+    <div class="loader">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg width="98px" height="98px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-flickr">
+            <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+            <circle cx="25" cy="50" r="25" fill="none" stroke="#2e2e2e" stroke-width="5">
+                <animate attributeName="cx" values="25;75;25" keyTimes="0;0.5;1" dur="1.5s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle cx="75" cy="50" r="25" fill="none" stroke="#ff6060" stroke-width="5">
+                <animate attributeName="cx" values="75;25;75" keyTimes="0;0.5;1" dur="1.5s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle cx="25" cy="50" r="25" fill="none" stroke="#2e2e2e" stroke-width="5">
+                <animate attributeName="cx" values="25;75;25" keyTimes="0;0.5;1" dur="1.5s" repeatCount="indefinite"></animate>
+                <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.499;0.5;1" dur="1.5s" repeatCount="indefinite"></animate>
+            </circle>
+        </svg>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    jQuery(window).on('load', function() {
+        "use strict";
+        initPreLoader();
+        initNavOpener();
+    });
+
+    function initPreLoader() {
+        jQuery('#pre-loader').delay(1200).fadeOut();
+    }
+
+    function initNavOpener() {
+        jQuery(".side-close, .side-opener, .mt-side-over").click(function() {
+            jQuery("body").toggleClass("side-col-active");
+            jQuery(".side-opener").toggleClass("active");
+            jQuery(".mt-side-over").toggleClass("active");
+            return false;
+        });
+        jQuery(".mobile-toggle").click(function() {
+            jQuery("body").toggleClass("mobile-active");
+            jQuery(".mobile-toggle").toggleClass("active");
+            return false;
+        });
+        jQuery(".cart-opener, .mt-mdropover").click(function() {
+            jQuery(this).parent().toggleClass("open");
+            return false;
+        });
+        jQuery(".search-close, .icon-magnifier, .fa-search").click(function() {
+            jQuery("body").toggleClass("search-active");
+            return false;
+        });
+        jQuery('.drop-link, #nav > ul > li.drop > a').click(function() {
+            jQuery(this).next().toggleClass("open");
+            return false;
+        });
+        jQuery('.mt-subopener').click(function() {
+            jQuery(this).parent().next().toggleClass("open");
+            return false;
+        });
+    }
+</script>
+
+</body>
+</html>
